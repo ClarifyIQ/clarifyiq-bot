@@ -1,0 +1,12 @@
+{
+  "name": "clarifyiq-bot",
+  "version": "1.0.0",
+  "description": "Bot de WhatsApp para ClarifyIQ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
