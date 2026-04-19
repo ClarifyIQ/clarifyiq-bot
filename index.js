@@ -22,5 +22,8 @@ app.get('/webhook', (req, res) => {
 });
 
 app.get('/', (req, res) => res.send('ClarifyIQ activo en Railway!'));
-
+app.post('/webhook', (req, res) => {
+  console.log('📩 MENSAJE RECIBIDO:', JSON.stringify(req.body, null, 2));
+  res.sendStatus(200);
+});
 app.listen(PORT, () => console.log(`Servidor en puerto ${PORT}`));
